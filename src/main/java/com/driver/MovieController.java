@@ -74,5 +74,11 @@ public class MovieController {
         return new ResponseEntity(response,HttpStatus.FOUND);
 
     }
+    @GetMapping("/allTop-movies")
+    public ResponseEntity addALlTopMovies(){
+        List<String> response=movieService.addALlTopMovies();
+        return new ResponseEntity<>(response,HttpStatus.FOUND);
+    }
+
 
 }

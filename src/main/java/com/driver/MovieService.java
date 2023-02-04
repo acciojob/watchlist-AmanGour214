@@ -38,6 +38,9 @@ public class MovieService {
     public String deleteAllDirectors(){
         return movieRepository.deleteAllDirectors();
     }
+    public List<String> addALlTopMovies(){
+        return movieRepository.addALlTopMovies();
+    }
 
 
 

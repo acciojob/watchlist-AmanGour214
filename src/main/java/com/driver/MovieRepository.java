@@ -111,10 +111,15 @@ public class MovieRepository {
 
     }
 
+    public List<String> addALlTopMovies(){
 
+        List<String>AllMovies=new ArrayList<>();
 
-
-
+        for (Movie movie:moviesDatabase.values()){
+            if(movie.getImdbRating()>=9)AllMovies.add(movie.getName());
+        }
+        return AllMovies;
+    }
 
 
 }
