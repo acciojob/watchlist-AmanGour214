@@ -26,6 +26,7 @@ public class MovieRepository {
     public String addMovie(Movie movies) {
         String name = movies.getName();
         moviesDatabase.put(name, movies);
+
         return "Movie Added Sucessfully";
     }
 
@@ -109,6 +110,7 @@ public class MovieRepository {
         return "delet Sucessfully";
 
     }
+
 
 
 
